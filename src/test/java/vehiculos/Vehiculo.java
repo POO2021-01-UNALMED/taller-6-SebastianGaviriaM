@@ -7,7 +7,7 @@ public class Vehiculo {
 	String nombre;
 	long precio;
 	float peso;
-	String tracción;
+	String traccion;
 	Fabricante fabricante;
 	public static int conVehiculos = 0;
 	
@@ -23,7 +23,7 @@ public class Vehiculo {
 		this.nombre = nombre;
 		this.precio = precio;
 		this.peso = peso;
-		this.tracción = traccion;
+		this.traccion = traccion;
 		this.fabricante = fabricante;
 		
 		this.fabricante.numeroVentas++;
@@ -95,10 +95,10 @@ public class Vehiculo {
 	
 	
 	public void setTraccion(String traccion) {
-		this.tracción = traccion;
+		this.traccion = traccion;
 	} 
 	public String getTraccion() {
-		return tracción;
+		return traccion;
 	}
 	
 	

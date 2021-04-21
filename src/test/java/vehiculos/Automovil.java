@@ -23,8 +23,5 @@ public class Automovil extends Vehiculo{
 	int getPuestos() {
 		return puestos;
 	}
-	
-	public String toString() {
-		return this.puertas + " Sisaaas " + this.nombre + this.tracción;
-	}
+
 }
