@@ -1,6 +1,6 @@
 package vehiculos;
 
-public class Vehículo {
+public class Vehiculo {
 	String placa;
 	int puertas;
 	float velocidadMaxima;
@@ -11,11 +11,11 @@ public class Vehículo {
 	Fabricante fabricante;
 	public static int conVehiculos = 0;
 	
-	Vehículo(){
+	Vehiculo(){
 		super();
 	}
 	
-	Vehículo(String placa, int puertas, float velocidadMaxima, String nombre, long precio, float peso, String traccion, Fabricante fabricante) {
+	public Vehiculo(String placa, int puertas, float velocidadMaxima, String nombre, long precio, float peso, String traccion, Fabricante fabricante) {
 		
 		this.placa = placa;
 		this.puertas = puertas;
@@ -32,73 +32,80 @@ public class Vehículo {
 	}
 	
 	public String vehiculosPorTipo() {
-		return("Automoviles: " + Automóvil.contadorAuto + "\n"
+		return("Automoviles: " + Automovil.contadorAuto + "\n"
 				+ "Camionetas: " + Camioneta.contadorCamioneta + "\n"
 				+ "Camiones: " + Camion.contadorCamiones);
 	}
 	
+	public static void setCantidadVehiculos(int cant) {
+		Vehiculo.conVehiculos = cant;
+	}
+	public static int getCantidadVehiculos() {
+		return conVehiculos;
+	}
 	
 	
-	void setPlaca(String placa) {
+	
+	public void setPlaca(String placa) {
 		this.placa = placa;
 	} 
-	String getPlaca() {
+	public String getPlaca() {
 		return placa;
 	}
 	
 	
-	void setPuertas(int puertas) {
+	public void setPuertas(int puertas) {
 		this.puertas = puertas;
 	} 
-	int getPuertas() {
+	public int getPuertas() {
 		return puertas;
 	}
 	
 	
-	void setvelocidadMaxima(float velMax) {
+	public void setvelocidadMaxima(float velMax) {
 		this.velocidadMaxima = velMax;
 	}
-	float getVelocidadMaxima() {
+	public float getVelocidadMaxima() {
 		return velocidadMaxima;
 	}
 	
 	
-	void setNombre(String nombre) {
+	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	} 
-	String nombre() {
+	public String getNombre() {
 		return nombre;
 	}
 	
 	
-	void setPrecio(long precio) {
+	public void setPrecio(long precio) {
 		this.precio = precio;
 	} 
-	long getPrecio() {
+	public long getPrecio() {
 		return precio;
 	}
 	
 	
-	void setPeso(float peso) {
+	public void setPeso(float peso) {
 		this.peso = peso;
 	} 
-	float getPeso() {
+	public float getPeso() {
 		return peso;
 	}
 	
 	
-	void setTraccion(String traccion) {
+	public void setTraccion(String traccion) {
 		this.tracción = traccion;
 	} 
-	String getTraccion() {
+	public String getTraccion() {
 		return tracción;
 	}
 	
 	
-	void setFabricante(Fabricante fab) {
+	public void setFabricante(Fabricante fab) {
 		this.fabricante = fab;
 	} 
-	Fabricante getFabricante() {
+	public Fabricante getFabricante() {
 		return fabricante;
 	}
 	

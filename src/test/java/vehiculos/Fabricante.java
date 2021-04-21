@@ -3,9 +3,16 @@ import java.util.ArrayList;
 
 public class Fabricante {
 	String nombre;
-	País pais;
+	Pais pais;
 	int numeroVentas = 0;
 	private static ArrayList<Fabricante> fabricantes = new ArrayList<>();
+	
+	
+	public Fabricante(String nombre, Pais pais){
+		this.nombre = nombre;
+		this.pais = pais;
+		
+	}
 	
 	public static Fabricante fabricaMayorVentas(){
         Fabricante mas = fabricantes.get(0);
@@ -26,10 +33,10 @@ public class Fabricante {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public País getPais() {
+	public Pais getPais() {
 		return pais;
 	}
-	public void setPais(País pais) {
+	public void setPais(Pais pais) {
 		this.pais = pais;
 	}
 	

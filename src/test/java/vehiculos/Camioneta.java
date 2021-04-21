@@ -1,6 +1,6 @@
 package vehiculos;
 
-public class Camioneta extends Vehículo {
+public class Camioneta extends Vehiculo {
 	boolean volco;
 	static int contadorCamioneta = 0;
 	
